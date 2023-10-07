@@ -12,51 +12,76 @@
     import React from 'react'
     
     export default function List({ items }) {
-        
-        return (
-            <>
-                <ul>
-                    {
-                        items.map((item) => (
-                            <li style={{ color: item.color }}>
-                                <h3>{item.name}</h3>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </>
     
+    return (
     
-        )
+    <>
+    
+    <ul>
+    
+    {
+    
+    items.map((item) => (
+    
+    <li style={{ color: item.color }}>
+    
+    <h3>{item.name}</h3>
+    
+    </li>
+    
+    ))
+    
+    }
+    
+    </ul>
+    
+    </>
+    
+    )
+    
     ;
+    
     }
 
 
 **App.jsx**
 
 
-        import { useState } from 'react'
-        import reactLogo from './assets/react.svg'
-        import viteLogo from '/vite.svg'
-        //import './App.css'
-        import List from './components/list'
-        
-        
-        function App() {
-          const items = [
-            { name: 'Fresa', color: 'red' },
-            { name: 'Berry', color: 'blue' },
-            { name: 'Platano', color: 'green' },
-            { name: 'Naranaja', color: 'orange' },
-        
-          ]
-        
-          return (
-            <>
-                <List items={items} />
-            </>
-          )
-        }
+    import { useState } from 'react'
+    
+    import reactLogo from './assets/react.svg'
+    
+    import viteLogo from '/vite.svg'
+    
+    //import './App.css'
+    
+    import List from './components/list'
+    
+    function App() {
+    
+    const items = [
+    
+    { name: 'Fresa', color: 'red' },
+    
+    { name: 'Berry', color: 'blue' },
+    
+    { name: 'Platano', color: 'green' },
+    
+    { name: 'Naranaja', color: 'orange' },
+    
+    ]
+    
+    return (
+    
+    <>
+    
+    <List items={items} />
+    
+    </>
+    
+    )
+    
+    }
     
     export default App
 
