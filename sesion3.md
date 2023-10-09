@@ -11,6 +11,9 @@
 
 - Este componente se encarga de mostrar una tarjeta (card) para una película individual. Toma tres propiedades (title, description, imageUrl) como entrada y muestra el título, la descripción y la imagen de la película utilizando componentes de tarjeta proporcionados por React Bootstrap.
 
+
+    ```
+
     import React from 'react'
     import { Card } from "react-bootstrap";
     
@@ -26,11 +29,14 @@
         )
     }
 
+    ```
+
 
 **MovieList.jsx:** 
 
 - Este componente es responsable de mostrar una lista de películas. Define un array llamado movies que contiene objetos de película con títulos, descripciones e URLs de imágenes. Luego, utiliza un bucle map para recorrer este array y generar un MovieCard para cada película. Los datos de la película se pasan como propiedades al componente MovieCard.
 
+    ```jsx
     import React from "react";
     import MovieCard from "./MovieCard";
     import { Container, Row, Col } from "react-bootstrap";
@@ -72,12 +78,14 @@
       );
     };
     export default MovieList;
+    ```
 
 
 **App.jsx:** 
 
 - Este es el componente principal de la aplicación. En él, se importa el componente MovieList y se utiliza en el elemento principal de la página. La aplicación renderiza un encabezado con el título "Películas" y luego muestra la lista de películas utilizando el componente MovieList.
 
+     ```  jsx
     import './App.css'
     import MovieList from './components/MovieList'
     
@@ -99,7 +107,7 @@
     }
     
     export default App
-
+    ```
 
 
 - En resumen, cuando ejecutas esta aplicación, obtendrás una página web que muestra una lista de tarjetas de películas, cada una con su título, descripción e imagen. Esta estructura facilita la adición de nuevas películas a la lista o la modificación de las existentes, ya que todo se gestiona de manera modular y componentizada.
