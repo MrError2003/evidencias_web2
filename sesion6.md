@@ -57,6 +57,7 @@ const datosReceta = {
   ]
 };
 
+
 function App() {
   return (
     <div>
